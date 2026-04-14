@@ -39,6 +39,12 @@ alias hi-"history"
 
  kill -9 $(lsof -ti:8000) 2>/dev/null || true; python3 -m uvicorn main:app --reload
 
+ ===Start a new project=====
+
+ python3 -m venv .venv
+source .venv/bin/activate
+pip install fastapi uvicorn
+
 git status
 git add .
 git commit -m "..."
